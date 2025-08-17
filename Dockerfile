@@ -18,4 +18,4 @@ ENV NODE_ENV=production
 # Expose the application port (backend runs on 5468)
 EXPOSE 9000
 
-CMD ["bun", "express.js"]
+CMD ["bun", "./express.js"]
