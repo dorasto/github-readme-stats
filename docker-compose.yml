@@ -1,0 +1,12 @@
+services:
+  github-readme-stats:
+    build:
+      context: .
+      dockerfile: ./Dockerfile # Path to your backend Dockerfile
+    container_name: github-readme-stats
+    expose:
+      - "9000" # Expose port 5468 to other containers
+    environment:
+      # Any environment variables for your backend
+      NODE_ENV: production
+      PAT_1: ${PAT_1}
